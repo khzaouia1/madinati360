@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Madinati 360 — Ma Ville 360</title>
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="logo">360</span> Madinati</a>
+    <nav id="nav"></nav>
+    <div id="userbox"></div>
+  </header>
+  <main id="view"></main>
+  <div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="modal-close" aria-label="Fermer">×</button><div id="modal-body"></div></div></div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="/vendor/leaflet/leaflet.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
