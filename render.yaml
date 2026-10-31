@@ -1,0 +1,16 @@
+# Configuration Render (https://render.com) — déploiement en un clic via "Blueprint"
+services:
+  - type: web
+    name: madinati360
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
